@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEFF",
+    "navigationBarTitleText": "河大来访登记",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "登记",
+        "iconPath": "images/CourseTable.png",
+        "selectedIconPath": "images/CourseTable-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/My.png",
+        "selectedIconPath": "images/My-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

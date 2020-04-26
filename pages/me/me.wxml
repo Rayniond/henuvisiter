@@ -1,0 +1,26 @@
+<view wx:if="{{!openid}}">
+<button  open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"> 登录 </button>
+</view>
+
+<view class="uploader-container" wx:if="{{openid}}">
+  <view class="bg-gradual-blue padding radius text-center shadow-blur">
+	  <view class="padding-xl text-white">
+			<view class="padding-xs text-xl">
+				<image class="cu-avatar xl round" src="{{userinfo.avatarUrl}}" ></image>
+				<view class="padding-xs">{{userinfo.nickName}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="name"></view>
+<block wx:for="{{item}}" wx:key="key">
+<view class="padding-xl radius shadow bg-white">
+<view>来访地点:{{item.place}}</view>  
+<view>来访内容:{{item.visitcontent}}</view>   
+<view>状态:{{status}}</view> 
+</view>
+</block>
+
+
+
